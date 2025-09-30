@@ -8,22 +8,56 @@ body{
     color: white;
 }
 
+.container{
+    display: inline-grid;
+    gap: 15px;  
+    grid-template: 100px 100px 500px 100px / 100px 300px;
+    padding: 10%;
+}
+
 header{
     background-color: green;
-}
-
-aside{
-    background-color: blue;
-}
-
-nav{
-    background-color: violet;
-}
-
-article{
-    background-color: blueviolet;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 footer{
     background-color: grey;
+    grid-column-start: 1;
+    grid-column-end: 3;
+   grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
 }
+
+
+aside{
+    background-color: blue;
+   /* grid-column-start: 1;
+    grid-column-end: 2;*/
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+nav{
+    background-color: violet;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+article{
+    background-color: blueviolet;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+header,aside,nav,article,footer{
+    gap: 15px;
+}
+
