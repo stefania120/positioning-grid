@@ -3,3 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    color: white;
+}
+
+header{
+    background-color: green;
+}
+
+aside{
+    background-color: blue;
+}
+
+nav{
+    background-color: violet;
+}
+
+article{
+    background-color: blueviolet;
+}
+
+footer{
+    background-color: grey;
+}
